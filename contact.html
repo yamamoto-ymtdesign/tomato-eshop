@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="瀬戸内トマトファームへのお問い合わせ。ご注文やご質問はこちらからお気軽にどうぞ。">
+  <title>お問い合わせ | 瀬戸内トマトファーム</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">&#127813;</span>
+        <a href="index.html">瀬戸内トマトファーム</a>
+      </div>
+      <button class="hamburger" aria-label="メニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="products.html">商品一覧</a></li>
+          <li><a href="about.html">こだわり</a></li>
+          <li><a href="order.html">ご注文方法</a></li>
+          <li><a href="contact.html" class="active">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>お問い合わせ</h1>
+    <p>ご注文・ご質問はお気軽にどうぞ</p>
+  </section>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb container">
+    <a href="index.html">ホーム</a><span>></span>お問い合わせ
+  </div>
+
+  <!-- Contact Info -->
+  <section class="section">
+    <div class="features-grid container" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 48px;">
+      <div class="feature-card">
+        <span class="feature-icon">&#128222;</span>
+        <h3>お電話</h3>
+        <p><strong style="font-size: 1.2rem; color: var(--color-primary);">090-XXXX-XXXX</strong><br>受付時間：9:00〜17:00<br>（日曜・祝日を除く）</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#128224;</span>
+        <h3>FAX</h3>
+        <p><strong style="font-size: 1.2rem; color: var(--color-primary);">0XX-XXX-XXXX</strong><br>24時間受付<br>注文用紙をダウンロード</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">&#128231;</span>
+        <h3>メール</h3>
+        <p><strong style="font-size: 1rem; color: var(--color-primary);">info@example.com</strong><br>24時間受付<br>2営業日以内に返信します</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="section section-bg">
+    <div class="section-title">
+      <span class="title-icon">&#9993;&#65039;</span>
+      <h2>お問い合わせフォーム</h2>
+      <p class="subtitle">以下のフォームに必要事項をご入力ください</p>
+    </div>
+    <form class="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label>お問い合わせ種別<span class="required">*必須</span></label>
+        <select required>
+          <option value="">選択してください</option>
+          <option value="order">ご注文</option>
+          <option value="question">商品に関するご質問</option>
+          <option value="gift">ギフトについて</option>
+          <option value="subscription">定期便について</option>
+          <option value="other">その他</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>お名前<span class="required">*必須</span></label>
+        <input type="text" placeholder="例：山田 太郎" required>
+      </div>
+      <div class="form-group">
+        <label>メールアドレス<span class="required">*必須</span></label>
+        <input type="email" placeholder="例：example@email.com" required>
+      </div>
+      <div class="form-group">
+        <label>お電話番号</label>
+        <input type="tel" placeholder="例：090-1234-5678">
+      </div>
+      <div class="form-group">
+        <label>郵便番号</label>
+        <input type="text" placeholder="例：123-4567">
+      </div>
+      <div class="form-group">
+        <label>ご住所</label>
+        <input type="text" placeholder="例：東京都渋谷区...">
+      </div>
+      <div class="form-group">
+        <label>お問い合わせ内容<span class="required">*必須</span></label>
+        <textarea placeholder="ご注文の場合は、ご希望の商品名・数量・お届け日時をご記入ください。" required></textarea>
+      </div>
+      <div class="form-submit">
+        <button type="submit" class="btn btn-accent">送信する</button>
+      </div>
+      <p style="text-align: center; margin-top: 16px; font-size: 0.82rem; color: var(--color-text-light);">※ このフォームはデモ用です。実際の送信にはサーバー側の設定が必要です。</p>
+    </form>
+  </section>
+
+  <!-- Map placeholder -->
+  <section class="section">
+    <div class="section-title">
+      <span class="title-icon">&#128205;</span>
+      <h2>農園所在地</h2>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto; background: linear-gradient(135deg, #e8e8e8, #f5f5f5); height: 300px; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; color: var(--color-text-light);">
+      <p style="text-align: center;">&#128506;<br>地図はGoogle Maps埋め込みで表示予定<br><br>〒XXX-XXXX<br>○○県○○市○○町1-2-3</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">&#127813;</span>
+          瀬戸内トマトファーム
+        </div>
+        <p>こだわりのミニトマトを農園から直送。<br>家族で営む小さな農園から、全国へお届けします。</p>
+      </div>
+      <div class="footer-links">
+        <h4>メニュー</h4>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="products.html">商品一覧</a></li>
+          <li><a href="about.html">こだわり</a></li>
+          <li><a href="order.html">ご注文方法</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>サポート</h4>
+        <ul>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="tokushoho.html">特定商取引法に基づく表記</a></li>
+          <li><a href="privacy.html">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 瀬戸内トマトファーム All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
